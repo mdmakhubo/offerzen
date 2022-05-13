@@ -1,0 +1,110 @@
+.topbar {
+    height: 60px;
+    background-color: #343951;
+    position: relative;
+
+    .logo {
+        position: absolute;
+        top: 23px;
+        color: white;
+        left: 124px;
+        font-weight: 600;
+
+        .offer {
+            border: 2px solid white;
+            padding: 0 2px;
+        }
+
+        .zen {
+            padding: 0 2px;
+        }
+    }
+}
+
+.searchInputs {
+    height: 60px;
+    position: relative;
+    margin-left: 125px;
+    top: 10px;
+
+    .wrapper {
+        display: flex;
+        align-items: center;
+        width: 17%;
+        height: 60%;
+        border: 2px solid #E4EBEF;
+
+        input {
+            border: none;
+            outline: none;
+            background: transparent;
+
+            &::placeholder {
+                font-size: 14px;
+                padding: 0 10px;
+                color: #DAE0E4;
+            }
+        }
+
+        .searchIcon {
+            color: #A6ACAF;
+        }
+    }
+
+    .items {
+        position: absolute;
+        right: 9.6%;
+        top: 15%;
+        color: #7C7C80;
+        font-size: 14px;
+
+        input {
+                display: inline-block;
+                position: relative;
+                top: -1px;
+                width: 20px;
+                height: 20px;
+                margin: -1px 0px 0 0;
+                vertical-align: middle;
+                background: #E4F0FC;
+                border: 1px solid #5EA5EE;
+                border-radius: 2px;
+                cursor: pointer;
+            }
+    }
+
+}
+
+@media screen and (max-width: 360px) {}
+
+@media screen and (max-width: 414px) {  
+    .searchInputs {
+            .wrapper {
+                width: 70%;
+            }
+    
+            .items {
+                right: 25%;
+            }
+        }
+}
+
+
+@media screen and (max-width: 768px) {
+    .topbar {    
+        .logo {
+            left: 50px;
+            }
+        }
+
+    .searchInputs {
+        margin-left: 50px;
+        .wrapper {
+                width:29%;
+        }
+        .items {
+            right: 7%;
+        }
+    }
+}
+

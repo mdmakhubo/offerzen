@@ -1,0 +1,52 @@
+.home {
+
+    .datGrid {
+            background-color: #D8D8D8;
+            height: 500px;
+            padding: 50px 122px;
+        }
+
+    .cellWithImg {
+            display: flex;
+            align-items: center;
+    
+            .cellImg {
+                width: 32px;
+                height: 32px;
+                border-radius: 50%;
+                object-fit: cover;
+                margin-right: 20px;
+            }
+        }
+
+    .archiveButton {
+        color: #5EA5EE;
+    }         
+
+    .dataGrid {
+        background-color: white!important;
+        position: relative;
+    }
+
+    .MuiDataGrid-columnHeadersInner {
+        background-color: #F9FAFB;
+        color: #343951;
+    }
+
+    .MuiDataGrid-cellContent, .MuiDataGrid-cell--withRenderer {
+        color: #7C7C80;
+    }     
+    
+}
+
+@media screen and (max-width: 360px) {}
+
+@media screen and (max-width: 414px) {}
+
+@media screen and (max-width: 768px) {
+    .home {    
+        .datGrid {
+            padding: 30px 50px;
+        }
+    }
+}
